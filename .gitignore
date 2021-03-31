@@ -28,4 +28,4 @@ local.properties
 *.launch
 
 # VSCode configuration folder
-.vscode/*
+.vscode/
