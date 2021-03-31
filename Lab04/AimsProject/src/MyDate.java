@@ -252,7 +252,7 @@ public class MyDate {
 			} else {
 				return 0;
 			}
-			for (int i = 1; i < 9; i++) {
+			for (int i = 1; i <= 9; i++) {
 				if (strArr[1].equals(ordialArr[i])){
 					return i + tens;
 				}
@@ -327,7 +327,7 @@ public class MyDate {
 			if (tens == 0) {
 				return 0;
 			}
-			for (int i = 1; i < 9; i++) {
+			for (int i = 1; i <= 9; i++) {
 				if (strArr[1].equals(numberArr[i])){
 					return i + tens;
 				}
