@@ -1,6 +1,7 @@
 package hust.soict.hedspi.aims.media.disc;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import hust.soict.hedspi.aims.media.Media;
@@ -40,6 +41,7 @@ public class CompactDisc extends Disc implements Playable{
             }
         }
         tracks.add(track);
+        Collections.sort(tracks);
         this.length = this.getLength();
         return true;
     }

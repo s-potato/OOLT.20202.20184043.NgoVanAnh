@@ -19,6 +19,4 @@ public abstract class Disc extends Media {
 	public int getLength() {
 		return length;
 	}
-	
-	public abstract void print();
 }

@@ -29,6 +29,7 @@ public class Book extends Media{
         super(id, title, category, cost);
         this.authors = authors;
         this.content = content;
+        this.processContent();
     }
 
     public List<String> getAuthors() {
@@ -75,7 +76,7 @@ public class Book extends Media{
         return true;
     }
 
-    public void processContent() {
+    private void processContent() {
         String[] tokens = this.getContent().toLowerCase().split("[\\p{Punct}\\s]+");
         this.contentTokens.clear();
         this.contentTokens.addAll(Arrays.asList(tokens));

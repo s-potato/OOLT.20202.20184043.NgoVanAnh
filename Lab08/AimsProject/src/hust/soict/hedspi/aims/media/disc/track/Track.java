@@ -40,7 +40,10 @@ public class Track implements Playable, Comparable<Track>{
 	}
 
     @Override
-    public int compareTo(Track obj) {
-        return 0;
+    public int compareTo(Track track) {
+        if (this.getTitle().equals(track.getTitle())) {
+            return this.getLength() - track.getLength();
+        }
+        return this.getTitle().compareTo(track.getTitle());
     }
 }
